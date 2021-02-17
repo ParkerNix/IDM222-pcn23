@@ -1,0 +1,251 @@
+/*fonts*/
+@font-face {
+  font-family: 'open_sans';
+ src: url('../fonts/opensans-regular-webfont.woff2') format('woff2');
+ font-weight: normal;
+ font-style: normal;
+}
+ 
+@font-face {
+ font-family: 'open_sans';
+ src: url('../fonts/opensans-bold-webfont.woff2') format('woff2');
+ font-weight: bold;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'poppins';
+ src: url('../fonts/poppins-regular-webfont.woff2') format('woff2');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'poppins';
+ src: url('../fonts/poppins-bold-webfont.woff2') format('woff2');
+ font-weight: bold;
+ font-style: normal;
+}
+
+/*setup*/
+html {
+ box-sizing: border-box; 
+ -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+body {
+ padding: 0;
+ margin: 0;
+}
+
+/*nav bar*/
+nav {
+ display: flex;
+ justify-content: center;
+ position: fixed;
+ z-index: 10;
+ background-color: rgba(255, 255, 255, 0.705);
+}
+
+.logo {
+ display: inline;
+ width: 3.25rem;
+ padding: .3rem 0 .5rem .75rem;
+ float: left;
+}
+
+ul.navlist {
+ list-style: none;
+ display: inline;
+ margin: 1rem .5rem 1rem 0;
+ padding: 0 0 0 1rem;
+ float: right;
+}
+
+.navlist li {
+ font-size: 1.5rem;
+ font-weight: bold;
+ display: inline;
+ padding-right: .3rem;
+}
+
+/*home*/
+.home {
+ background-color: lightyellow;
+}
+
+.greeting {
+ text-align: center;
+ position: relative;
+ top: 10rem;
+ padding: 2rem;
+}
+
+.welcome {
+  margin-top: 0;
+}
+
+.hey {
+  margin-bottom: 0;
+}
+
+/*about me*/
+body.aboutpage {
+  background-color: rgb(148, 221, 221);
+}
+
+.about {
+ margin: 0;
+}
+
+.aboutmoi {
+ background-color: rgb(148, 221, 221);
+ position: relative;
+ top: 4.75rem;
+ margin-bottom: 4.75rem;
+}
+
+.aboutme {
+ padding: 2rem 2rem 0;
+}
+
+.abouttext {
+ padding: 0 0 .1rem;
+ margin-top: 1rem;
+}
+
+.abouttext p {
+ margin: 1rem 0 2rem;
+}
+
+.abouttext img {
+ display: block;
+ margin: 2rem auto 2rem;
+}
+
+/*resume*/
+body.resumepage {
+  background-color: #b1f4b6;
+}
+
+.resumebody {
+ position: relative;
+ top: 4.75rem;
+}
+
+#top {
+ margin-top: 1.3rem;
+}
+
+.Intro, .Skills, .Education, .Volunteer, .Experience {
+ padding: 1rem 2rem;
+}
+
+.Intro, .Skills { 
+ background-color: #b1f4b6;
+}
+ 
+.Intro { 
+ text-align: center;
+}
+
+.Education, .Volunteer { 
+ background-color: rgb(148, 221, 221); 
+}
+
+.Experience { 
+ background-color: #8989ff; 
+}
+
+.Skills {
+ padding-bottom: 1.9rem;
+}
+
+/*work and case studies*/
+.work h2, .casestudy h2 {
+ margin: 1rem 0 0
+}
+
+.work p, .casestudy p {
+ margin: 0 0 1rem;
+}
+
+.workbody, .casestudy {
+ padding: 4.1rem 0 0;
+ background-color: lightyellow;
+}
+
+.workbody h1, .workbody h2, .casestudy h1, .casestudy h2 {
+ text-align: center;
+}
+
+.workbody h1, .workbody h2, .workbody p, .casestudy h1, .casestudy h2, .casestudy p {
+ padding: 2rem;
+}
+
+.workbody img, .casestudy img {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.task, .middle, .ending {
+ margin: 0 0 2rem;
+}
+
+.teado p {
+ margin-bottom: 0;
+}
+
+.first, .redesign, .teado, .task, .middle , .ending {
+ background-color: #8989ff;
+}
+
+/*general*/
+.work p, .work h2, .casestudy, .parker, .greeting  {
+  color: black;
+}
+
+a {
+ text-decoration: none;
+}
+
+a:link, a:visited { 
+ color: rgb(0, 89, 255); 
+}
+
+a:active { 
+ color: rgb(0, 217, 255); 
+}
+ 
+a.navabout:active  { 
+ color: rgb(148, 221, 221); 
+}
+
+a.navresume:active { 
+ color: #b1f4b6; 
+}
+
+a.navwork:active { 
+ color: #8989ff; 
+}
+
+p, li {
+ font-size: 1rem;
+}
+
+h1 {
+ font-size: 1.7rem;
+}
+ 
+h2 {
+ font-size: 1.3rem;
+}
+
+p, a, li {
+ font-family: 'open_sans', Arial, Helvetica, sans-serif;
+}
+
+.parker, h1, h2, h3 {
+font-family: 'poppins', Arial, Helvetica, sans-serif;
+}
