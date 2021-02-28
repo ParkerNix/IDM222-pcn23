@@ -40,9 +40,6 @@ body {
 
 /*nav bar*/
 nav {
- display: flex;
- justify-content: center;
- position: fixed;
  z-index: 10;
  background-color: rgba(255, 255, 255, 0.705);
 }
@@ -162,16 +159,24 @@ body.resumepage {
 }
 
 /*work and case studies*/
-.work h2, .casestudy h2 {
- margin: 1rem 0 0
+
+.workbody h1, .casestudy h1 {
+  margin: 2rem 0 1rem;
+}
+
+.workbody h2, .casestudy h2 {
+  margin: 0;
+}
+
+.casestudy a, .casestudy a:visited, .casestudy a:hover, .casestudy a:active, .workbody a, .workbody a:visited, .workbody a:hover, .workbody a:active {
+  color: black;
 }
 
 .work p, .casestudy p {
  margin: 0 0 1rem;
 }
 
-.workbody, .casestudy {
- padding: 4.1rem 0 0;
+.bodywork {
  background-color: lightyellow;
 }
 
@@ -193,6 +198,10 @@ body.resumepage {
  margin: 0 0 2rem;
 }
 
+.workbody {
+  margin: 0 0 1rem;
+}
+
 .teado p {
  margin-bottom: 0;
 }
@@ -204,6 +213,10 @@ body.resumepage {
 /*general*/
 .work p, .work h2, .casestudy, .parker, .greeting  {
   color: black;
+}
+
+img {
+  width: 100%;
 }
 
 a {
@@ -248,4 +261,100 @@ p, a, li {
 
 .parker, h1, h2, h3 {
 font-family: 'poppins', Arial, Helvetica, sans-serif;
+}
+
+/*mobile stuff*/
+@media (min-width: 240px) {
+  nav {
+    position: fixed;
+  }
+}
+
+/*tablet stuff*/
+@media (min-width: 520px) {
+  
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: .3fr 1fr .80fr;
+    grid-template-areas:
+    'title title'
+    'teado teado'
+    'first redesign';
+    gap: 1rem 1rem;
+    margin: 1rem;
+  }
+
+  .first {
+    grid-area: first;
+  }
+  
+  .redesign {
+    grid-area: redesign;
+    align-self: stretch;
+  }
+  
+  .teado {
+    grid-area: teado;
+  }
+  
+  .title {
+    grid-area: title;
+    align-self: center;
+  }
+}
+
+/*large screen stuff*/
+@media (min-width: 980px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    position: static;
+  }
+
+  .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr .80fr;
+  grid-template-areas:
+  'title teado teado'
+  'first . redesign';
+  gap: 1rem 1rem;
+  margin: 1rem;
+  }
+
+  .first {
+    grid-area: first;
+  }
+
+  .redesign {
+    grid-area: redesign;
+    align-self: stretch;
+  }
+
+  .teado {
+    grid-area: teado;
+  }
+
+  .title {
+    grid-area: title;
+    align-self: center;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+   font-size: 2rem;
+  }
+
+  .navlist li {
+    font-size: 1.6rem;
+   padding-right: 2rem;
+  }
 }
