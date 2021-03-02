@@ -36,6 +36,10 @@ html {
 body {
  padding: 0;
  margin: 0;
+ background-image: linear-gradient(lightyellow, white);
+ height: 100%;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
 }
 
 /*nav bar*/
@@ -156,6 +160,10 @@ body.resumepage {
 
 .Skills {
  padding-bottom: 1.9rem;
+}
+
+.Skills img {
+  width: initial;
 }
 
 /*work and case studies*/
@@ -304,6 +312,35 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
   }
 }
 
+.casestudy {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: .6fr .8fr 1fr;
+  grid-template-areas: 
+  'task task task title'
+  'middle middle middle middle'
+  'ending ending ending ending';
+  gap: 0 2rem;
+  padding: 1rem 1rem 0;
+}
+
+.task {
+  grid-area: task;
+  padding: 0;
+}
+
+.title {
+  grid-area: title;
+}
+
+.middle {
+  grid-area: middle;
+}
+
+.ending {
+  grid-area: ending;
+}
+
 /*large screen stuff*/
 @media (min-width: 980px) {
   nav {
@@ -341,7 +378,35 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
     align-self: center;
   }
 
-  p {
+  .casestudy {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    'task task task title'
+    'middle middle ending ending';
+    gap: 0 2rem;
+    padding: 1rem 1rem 0;
+  }
+
+  .task {
+    grid-area: task;
+    padding: 0;
+  }
+
+  .title {
+    grid-area: title;
+  }
+
+  .middle {
+    grid-area: middle;
+  }
+
+  .ending {
+    grid-area: ending;
+  }
+
+  p, li {
     font-size: 1.6rem;
   }
 
