@@ -279,7 +279,7 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
 }
 
 /*tablet stuff*/
-@media (min-width: 520px) {
+@media (min-width: 500px) {
   
   .items {
     display: grid;
@@ -310,35 +310,36 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
     grid-area: title;
     align-self: center;
   }
-}
 
-.casestudy {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: .6fr .8fr 1fr;
-  grid-template-areas: 
-  'task task task title'
-  'middle middle middle middle'
-  'ending ending ending ending';
-  gap: 0 2rem;
-  padding: 1rem 1rem 0;
-}
 
-.task {
-  grid-area: task;
-  padding: 0;
-}
+  .casestudy {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: .6fr .8fr 1fr;
+    grid-template-areas: 
+    'task task task title'
+    'middle middle middle middle'
+    'ending ending ending ending';
+    gap: 0 2rem;
+    padding: 1rem 1rem 0;
+  }
 
-.title {
-  grid-area: title;
-}
+  .task {
+    grid-area: task;
+    padding: 0;
+  }
 
-.middle {
-  grid-area: middle;
-}
+  .title {
+    grid-area: title;
+  }
 
-.ending {
-  grid-area: ending;
+  .middle {
+   grid-area: middle;
+  }
+
+  .ending {
+    grid-area: ending;
+  }
 }
 
 /*large screen stuff*/
@@ -380,8 +381,8 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
 
   .casestudy {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: .5fr .5fr .5fr 1fr;
+    grid-template-rows: .1fr .8fr;
     grid-template-areas: 
     'task task task title'
     'middle middle ending ending';
@@ -392,6 +393,10 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
   .task {
     grid-area: task;
     padding: 0;
+  }
+
+  .task img {
+    width: 80%;
   }
 
   .title {
