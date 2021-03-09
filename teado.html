@@ -19,10 +19,14 @@
   <h1 class="title">Redesigning Tea-Do</h1>
 
   <div class="task">
-    <h2>Our task</h2>
+    <div class="titlecs">
+      <h2>Our task</h2>
+    </div>
     <picture>
-      <source type="image/svg" srcset="images/originalsite.svg">
-      <img src="images/originalsite.png" alt="original site">
+      <source media="(min-width: 500px)" type="image/svg" srcset="images/originalsite_large.svg">
+      <source type="image/svg" srcset="images/originalsite_small.svg">
+      <source media="(min-width:500px)" srcset="images/originalsite_large.png">
+      <img src="images/originalsite_small.png" alt="original site">
     </picture>
     <p>For this project, My group and I were to collaborate to prototype a redesign for a website. We chose to do our project on a 
       website for the bubble tea restaurant, Tea-Do. We wanted to gather test research on how the website functioned for the user so 

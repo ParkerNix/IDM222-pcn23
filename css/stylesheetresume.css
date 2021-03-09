@@ -201,7 +201,7 @@ body.resumepage {
  padding: 2rem;
 }
 
-.workbody img, .casestudy img {
+.workbody img, .casestudy img, .casestudy video {
  display: block;
  margin-left: auto;
  margin-right: auto;
