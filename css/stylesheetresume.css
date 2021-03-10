@@ -383,7 +383,7 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
   'title teado teado'
   'first . redesign';
   gap: 1rem 1rem;
-  margin: 1rem;
+  margin: 4.75rem 1rem 0;
   }
 
   .first {
@@ -407,12 +407,12 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
   .casestudy {
     display: grid;
     grid-template-columns: .5fr .5fr .5fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: .8fr 1fr;
     grid-template-areas: 
     'task task task title'
     'middle middle ending ending';
     gap: 0 2rem;
-    padding: 1rem 1rem 0;
+    padding: 4.75rem 1rem 0;
   }
 
   .task {
