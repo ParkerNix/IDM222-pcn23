@@ -228,10 +228,6 @@ body.resumepage {
   color: black;
 }
 
-img {
-  width: 100%;
-}
-
 a {
  text-decoration: none;
 }
@@ -334,8 +330,9 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
     padding: 0;
   }
 
-  .title {
+  .titlecs {
     grid-area: title;
+    align-self: center;
   }
 
   .middle {
@@ -362,6 +359,7 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
 
   .img img {
     margin-top: 1.5rem;
+    width: 100%;
   }
 
   .text {
@@ -370,7 +368,7 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
 }
 
 /*large screen stuff*/
-@media (min-width: 980px) {
+@media (min-width: 960px) {
   nav {
     display: flex;
     justify-content: center;
@@ -420,10 +418,6 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
   .task {
     grid-area: task;
     padding: 0;
-  }
-
-  .task img {
-    width: 80%;
   }
 
   .titlecs {
