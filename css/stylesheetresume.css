@@ -482,6 +482,7 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
 
   .img img {
     margin-top: 1.5rem;
+    padding-left: 1rem;
   }
 
   .text {
@@ -490,6 +491,11 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
 
   .about h1 {
     font-size: 3rem;
+  }
+
+  .text p {
+    padding-left: 3rem;
+    max-width: 80%;
   }
 
   p, li {
