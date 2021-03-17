@@ -232,11 +232,11 @@ a {
  text-decoration: none;
 }
 
-a:link, a:visited { 
+nav a:link,nav a:visited { 
  color: rgb(0, 89, 255); 
 }
 
-a:active { 
+nav a:active { 
  color: rgb(0, 217, 255); 
 }
  
@@ -276,11 +276,33 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
 @media (min-width: 240px) {
   nav {
     position: fixed;
+    width: 100%;
+  }
+
+  .navlist li {
+    padding-right: .5rem;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .workbody, .casestudy {
+    position: relative;
+    top: 4.75rem;
+  }
+
+  .workbody h1, .casestudy h1 {
+    margin: 0 0 1rem;
   }
 }
 
 /*tablet stuff*/
 @media (min-width: 500px) {
+
+  .navlist li {
+    padding-right: 2rem;
+  }
   
   .items {
     display: grid;
@@ -291,7 +313,7 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
     'teado teado'
     'first redesign';
     gap: 1rem 1rem;
-    margin: 1rem;
+    margin: 0 1rem 1rem;
   }
 
   .first {
@@ -365,6 +387,18 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
   .text {
     grid-area: text;
   }
+
+  p, li {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 /*large screen stuff*/
@@ -372,7 +406,6 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
   nav {
     display: flex;
     justify-content: center;
-    position: static;
   }
 
   .items {
@@ -383,7 +416,8 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
   'title teado teado'
   'first . redesign';
   gap: 1rem 1rem;
-  margin: 4.75rem 1rem 0;
+  margin: 0 1rem 0;
+  padding-top: 4.75rem;
   }
 
   .first {
