@@ -298,7 +298,7 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
 }
 
 /*tablet stuff*/
-@media (min-width: 500px) {
+@media (min-width: 650px) {
 
   .navlist li {
     padding-right: 2rem;
