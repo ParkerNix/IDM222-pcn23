@@ -417,7 +417,6 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
   'first . redesign';
   gap: 1rem 1rem;
   margin: 0 1rem 0;
-  padding-top: 4.75rem;
   }
 
   .first {
@@ -446,7 +445,7 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
     'task task task title'
     'middle middle ending ending';
     gap: 0 2rem;
-    padding: 4.75rem 1rem 0;
+    padding: 0 1rem 0;
   }
 
   .task {
@@ -499,7 +498,7 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
   }
 
   p, li {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   h1 {
