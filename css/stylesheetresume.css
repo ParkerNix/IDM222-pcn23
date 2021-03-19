@@ -220,7 +220,7 @@ body.resumepage {
  margin-bottom: 0;
 }
 
-.first, .redesign, .teado, .task, .middle , .ending {
+.first, .redesign, .teado, .jsproject, .task, .middle, .ending {
  background-color: #8989ff;
  box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 lightgray;
 }
@@ -305,7 +305,7 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
     justify-content: space-around;
   }
 
-  .first, .teado, .redesign, .task, .middle, .ending, .titlecs, .title {
+  .first, .teado, .redesign, .jsproject, .task, .middle, .ending, .titlecs, .title {
     margin: 0 1rem 2rem;
   }
 
@@ -328,11 +328,12 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
   .items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: .3fr 1fr .80fr;
+    grid-template-rows: .3fr 1fr .80fr .80fr;
     grid-template-areas:
     'title title'
     'teado teado'
-    'first redesign';
+    'first redesign'
+    'jsproject .';
     gap: 1rem 1rem;
     margin: 0 1rem 1rem;
   }
@@ -348,6 +349,10 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
   
   .teado {
     grid-area: teado;
+  }
+
+  .jsproject {
+    grid-area: jsproject;
   }
   
   .title {
@@ -435,7 +440,7 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
   grid-template-rows: 1fr .80fr;
   grid-template-areas:
   'title teado teado'
-  'first . redesign';
+  'first jsproject redesign';
   gap: 1rem 1rem;
   margin: 0 1rem 0;
   }
@@ -451,6 +456,10 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
 
   .teado {
     grid-area: teado;
+  }
+
+  .jsproject {
+    grid-area: jsproject;
   }
 
   .title {
