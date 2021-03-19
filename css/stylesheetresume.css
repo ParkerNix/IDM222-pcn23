@@ -46,6 +46,7 @@ body {
 nav {
  z-index: 10;
  background-color: rgba(255, 255, 255, 0.705);
+ box-shadow: 0 2px 2px 0 rgb(59, 59, 59), 0 6px 20px 0 rgba(41, 41, 41, 0);
 }
 
 .logo {
@@ -221,6 +222,7 @@ body.resumepage {
 
 .first, .redesign, .teado, .task, .middle , .ending {
  background-color: #8989ff;
+ box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 lightgray;
 }
 
 /*general*/
@@ -290,6 +292,32 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
   .workbody, .casestudy {
     position: relative;
     top: 4.75rem;
+  }
+  
+  .items, .casestudy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .items {
+    height: 95rem;
+  }
+
+  #reddit {
+    height: 155rem;
+  }
+
+  #first {
+    height: 147rem;
+  }
+
+  #teado {
+    height: 140rem;
+  }
+
+  .title h1 {
+    padding: 1.5rem 2rem 0;
   }
 
   .workbody h1, .casestudy h1 {
@@ -379,7 +407,7 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
     grid-area: img;
   }
 
-  .img img {
+  .img img, .casestudy img, .workbody img {
     margin-top: 1.5rem;
     width: 100%;
   }
