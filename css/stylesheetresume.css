@@ -225,6 +225,11 @@ body.resumepage {
  box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 lightgray;
 }
 
+.img img, .casestudy img, .workbody img {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
 /*general*/
 .work p, .work h2, .casestudy, .parker, .greeting  {
   color: black;
@@ -300,20 +305,8 @@ font-family: 'poppins', Arial, Helvetica, sans-serif;
     justify-content: space-around;
   }
 
-  .items {
-    height: 95rem;
-  }
-
-  #reddit {
-    height: 155rem;
-  }
-
-  #first {
-    height: 147rem;
-  }
-
-  #teado {
-    height: 140rem;
+  .first, .teado, .redesign, .task, .middle, .ending, .titlecs, .title {
+    margin: 0 1rem 2rem;
   }
 
   .title h1 {
